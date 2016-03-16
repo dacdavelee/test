@@ -83,11 +83,11 @@ function setUpBtnGroup(buttonCountStart, buttonCountEnd) {
     element.type = 'button';
     element.className = 'btn btn-default';
     elementDivBtnGroup.appendChild(element);
+    element.addEventListener('click', myHandler);
   }
 }
 
 function setUpBtnGroupThreeOption() {
-
   var threeOption = ['Left', 'Middle', 'Right'];
 
   for (var i = 0; i < threeOption.length; i++) {
@@ -96,13 +96,7 @@ function setUpBtnGroupThreeOption() {
     element.type = 'button';
     element.className = 'btn btn-default';
     elementDivBtnGroup.appendChild(element);
-
-
     element.addEventListener('click', myHandler);
-  // element.addEventListener('click' , replaceText(threeOption[i]));
-  // element.addEventListener('click', function(element) {
-  //   document.getElementsByTagName('H3')[0].innerHTML = 'Hi'
-  // });
   }
 }
 
