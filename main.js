@@ -100,6 +100,7 @@ function setUpBtnGroupThreeOption() {
   }
 }
 
+
 function myHandler(e) {
   var src;
   var parts;
